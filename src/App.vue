@@ -1,15 +1,17 @@
 <template>
-  <img alt="My logo" src="./assets/logo.png">
   <FirstComponent />
+  <InfoTest />
 </template>
 
 <script>
 import FirstComponent from './components/FirstComponent.vue'
+import InfoTest from './components/InfoTest.vue'
 
 export default {
   name: 'App',
   components: {
-    FirstComponent
+    FirstComponent,
+    InfoTest
   }
 }
 </script>
