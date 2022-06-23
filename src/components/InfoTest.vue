@@ -5,7 +5,7 @@
         <p>Para acessar meu projeto do <a v-bind:href="meu_link" target="_blank">jogo da cobrinha</a></p>
         <PerfilImagem />
         <div>
-            <button @click="showEmail">Mostrar email</button>
+            <button @click="showEmail">{{texto_botao}}</button>
         </div>
         <p v-show="mostrar_email">Email: caiopinho9@gmail.com</p>
     </div>
@@ -22,12 +22,18 @@
             return {
                 esta_trabalhando: false,
                 mostrar_email: false,
-                meu_link: 'https://caiopinho9.github.io/snake-game/'
+                meu_link: 'https://caiopinho9.github.io/snake-game/',
+                texto_botao: "Mostrar email"
             }
         },
         methods: {
             showEmail() {
                 this.mostrar_email = !this.mostrar_email
+                if (!this.mostrar_email) {
+                    this.texto_botao = "Mostrar email"
+                } else {
+                    this.texto_botao = "Esconder email"
+                }
             }
         }
     }
