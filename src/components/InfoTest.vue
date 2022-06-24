@@ -3,6 +3,10 @@
         <p v-if="esta_trabalhando"> Estou trabalhando</p>
         <p v-else> Não estou trabalhando</p>
         <p>Para acessar meu projeto do <a v-bind:href="meu_link" target="_blank">jogo da cobrinha</a></p>
+        <p>Utilizo as seguintes tecnologias:</p>
+        <ul>
+            <li v-for="(technology, index) in technology_data" v-bind:key="index">{{ technology }}</li>
+        </ul>
         <PerfilImagem />
         <div>
             <button @click="showEmail">{{texto_botao}}</button>
@@ -23,7 +27,8 @@
                 esta_trabalhando: false,
                 mostrar_email: false,
                 meu_link: 'https://caiopinho9.github.io/snake-game/',
-                texto_botao: "Mostrar email"
+                texto_botao: "Mostrar email",
+                technology_data: ["JavaScript", "HTML", "CSS", "Vue.js", "Java"]
             }
         },
         methods: {

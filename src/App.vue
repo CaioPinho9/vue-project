@@ -26,8 +26,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
-  margin-top: 60px;
+  margin-top: 0px;
   background-color: #1b2841;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 a {
