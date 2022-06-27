@@ -2,19 +2,22 @@
   <HeaderPage />
   <FirstComponent />
   <InfoTest />
+  <FormNameEmail />
 </template>
 
 <script>
 import HeaderPage from './components/HeaderPage.vue'
 import FirstComponent from './components/FirstComponent.vue'
 import InfoTest from './components/InfoTest.vue'
+import FormNameEmail from './components/FormNameEmail.vue'
 
 export default {
   name: 'App',
   components: {
     FirstComponent,
     InfoTest,
-    HeaderPage
+    HeaderPage,
+    FormNameEmail
   }
 }
 </script>
